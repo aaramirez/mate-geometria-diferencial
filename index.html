@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Geometría diferencial</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Curvas y superficies con el cálculo: curvatura y torsión, el triedro de Frenet, las formas fundamentales, la aplicación de Gauss, el teorema egregio, las superficies regladas, las geodésicas, Gauss-Bonnet y una introducción a la geometría riemanniana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Geometría <b>diferencial</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Por qué no se puede hacer un mapa plano de la Tierra sin deformarla</h1>
+  <p class="lede">Una hoja de papel se enrolla en un cilindro sin arrugarse, pero no hay forma de envolver una pelota con ella. La razón es un número que vive en cada punto de la superficie, la curvatura de Gauss, y que Gauss demostró que una hormiga podría medir sin salir de la superficie. Este curso mide cómo se curvan las curvas y las superficies con el cálculo, demuestra ese teorema y llega a los caminos más cortos y a la geometría de espacios curvos.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 10 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya hizo Cálculo en varias variables (derivadas parciales, diferenciabilidad, la regla de la cadena, el teorema de la función implícita y las integrales de superficie) y Geometría (vectores en el espacio, productos escalar y vectorial, cónicas y cuádricas). El teorema de existencia y unicidad de las ecuaciones diferenciales, que se usa dos veces, está en Ecuaciones diferenciales ordinarias.</p>
+    <p><b>Cómo está hecho.</b> Todo se ve en 3D y se puede girar: curvas con su triedro de Frenet que se desliza, superficies con su aplicación de Gauss pintada sobre una esfera, geodésicas que se trazan sobre un toro. Cada capítulo calcula primero en ejemplos concretos (la hélice, la esfera, el toro, el catenoide, la silla) y después demuestra el teorema general. Las prácticas usan Python con SymPy para calcular curvaturas de forma exacta y SciPy para trazar geodésicas. Es la materia Geometría Diferencial del pensum y abre la puerta a la geometría riemanniana y a la relatividad general.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Curvas</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="curvas-planas"><span class="n">01</span><b>Curvas planas: longitud y curvatura</b><p>Curvas parametrizadas, longitud de arco, curvatura con signo y el círculo osculador.</p></div>
+    <div class="mod soon" data-id="curvas-en-el-espacio"><span class="n">02</span><b>Curvas en el espacio: el triedro de Frenet</b><p>Curvatura y torsión, las fórmulas de Frenet-Serret y la clasificación de las curvas por congruencia.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Superficies en R³</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="superficies-regulares"><span class="n">03</span><b>Superficies regulares</b><p>Qué es una superficie, cómo se parametriza y qué es su plano tangente.</p></div>
+    <div class="mod soon" data-id="primera-forma-fundamental"><span class="n">04</span><b>La primera forma fundamental: medir sobre la superficie</b><p>Longitudes, ángulos y áreas desde adentro, la orientación y las isometrías.</p></div>
+    <div class="mod soon" data-id="aplicacion-de-gauss"><span class="n">05</span><b>Curvas en una superficie y la aplicación de Gauss</b><p>La segunda forma fundamental, las curvaturas principales y las curvaturas de Gauss y media.</p></div>
+    <div class="mod soon" data-id="teorema-egregio"><span class="n">06</span><b>El teorema egregio de Gauss</b><p>La curvatura de Gauss depende solo de la primera forma fundamental: por qué no existe un mapa plano y fiel de la Tierra.</p></div>
+    <div class="mod soon" data-id="superficies-regladas"><span class="n">07</span><b>Superficies regladas y desarrollables</b><p>Superficies hechas de rectas, cuáles se pueden desenrollar sobre el plano y la línea de estricción.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Geometría intrínseca</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="geodesicas"><span class="n">08</span><b>Derivada covariante y geodésicas</b><p>Las rectas de una superficie curva: curvas sin aceleración tangente que minimizan la distancia localmente.</p></div>
+    <div class="mod soon" data-id="gauss-bonnet"><span class="n">09</span><b>El teorema de Gauss-Bonnet</b><p>La curvatura total de una superficie cerrada depende solo de su número de agujeros.</p></div>
+    <div class="mod soon" data-id="geometria-riemanniana"><span class="n">10</span><b>Introducción a la geometría riemanniana</b><p>Una métrica sin espacio ambiente: el plano hiperbólico, las variedades y la curvatura en dimensión mayor.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-geometria-diferencial" target="_blank" rel="noopener">github.com/aaramirez/mate-geometria-diferencial</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
